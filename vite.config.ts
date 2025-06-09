@@ -6,6 +6,7 @@ import tailwindcss from "@tailwindcss/vite";
 export default defineConfig({
   plugins: [react(), tailwindcss()],
   server: {
+    port: 3000,
     allowedHosts: [`${process.env.FLY_APP_NAME}-${process.env.FLY_MACHINE_ID}.rockoai.dev`],
   },
 });
